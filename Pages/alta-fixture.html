@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta Fixture</title>
+    <link rel="stylesheet" href="https://alex-wd-creator.github.io/TP-09-JavaScript/css/estilos.css">
+    <script src="https://alex-wd-creator.github.io/TP-09-JavaScript/js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Alta de Fixture</h1>
+    </header>
+
+    <nav>
+        <a href="https://alex-wd-creator.github.io/TP-09-JavaScript/">Inicio</a>
+        <a href="https://alex-wd-creator.github.io/TP-09-JavaScript/Pages/ver-fixture.html">Ver Fixture</a>
+    </nav>
+
+    <form>
+        <label for="equipo-local">Equipo Local:</label>
+        <select name="equipo-local" id="equipo-local">
+            <option value="">Seleccione el primer equipo</option>
+            <option value="equipoA">Equipo A</option>
+            <option value="equipoB">Equipo B</option>
+        </select>
+
+        <label for="equipo-visitante">Equipo Visitante:</label>
+        <select name="equipo-visitante" id="equipo-visitante" required>
+            <option value="">Seleccione el segundo equipo</option>
+            <option value="equipoC">Equipo C</option>
+            <option value="equipoD">Equipo D</option>
+        </select>
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" name="fecha" id="fecha" required>
+
+        <label for="hora">Hora:</label>
+        <input type="time" name="hora" id="hora" required>
+
+        <label for="cancha">Cancha:</label>
+        <input type="text" name="cancha" id="cancha" required>
+
+        <label for="instancia">Instancia:</label>
+        <input type="radio" name="instancia" id="instancia" value="Fase de Grupos" required>Fase de Grupos
+        <input type="radio" name="instancia" id="instancia" value="Cuartos">Cuartos
+        <input type="radio" name="instancia" id="instancia" value="Semifinal">Semifinal
+        <input type="radio" name="instancia" id="instancia" value="Final">Final
+
+        <button type="submit">REGISTRAR ENCUENTRO</button>
+        <button type="reset">LIMPIAR FORMULARIO</button>
+
+    </form>
+
+    <footer>
+        <p>&copy; 2026 Torneo de Fútbol 2026. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
